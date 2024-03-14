@@ -25,4 +25,8 @@ public class DepartamentoService {
     public Optional<Departamento> buscarDepartamento(Integer idDepartamento){
         return departamentoRepository.findById(idDepartamento);
     }
+
+    public void deletarDepartamento(Integer idDepartamento){
+        departamentoRepository.deleteById(idDepartamento);
+    }
 }
